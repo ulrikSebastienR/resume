@@ -1,0 +1,94 @@
+% LaTeX resume using res.cls
+%\XeTeXinputencoding "GB2312"
+\documentclass[line,margin]{res}
+\usepackage{xeCJK}
+\setCJKmainfont{STHeiti}
+\usepackage{hyperref}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font
+
+\begin{document}
+
+\name{王道远}
+% \address used twice to have two lines of address
+\address{联系电话:\sl 15216861267}
+\address{E-mail:\sl TaoYeuanWang@gmail.com}
+
+
+\begin{resume}
+
+%\section{目标}       希望能在计算机领域里从事应用开发，框架设计以及信息处理的相关工作。
+
+
+\section{教育经历} {\sl 何志均班} 计算机科学与技术, 浙江大学, 本科 \hfill 2009/08 至 2013/06\\
+                % \sl will be bold italic in New Century Schoolbook (or
+	        % any postscript font) and just slanted in
+		% Computer Modern (default) font
+                总GPA $86/100$\\
+                获浙江大学2011-2012学年三好学生称号\\
+                获学士学位，何志均荣誉证书\\
+              % Concentration: Computer Science \\
+              % Minor: Management
+
+\section{计算机技能} {$\diamond$ \sl 编程语言和办公软件:} C/C++, C\#, JAVA, Scala, PHP, PL/SQL, MSSQL, MySQL, BASIC, Assembly, JavaScript, Linux Shell, Windows Shell, Verilog HDL, Matlab, OpenCV, OpenGL, OpenMP, \LaTeX, MS Office. \\
+                {$\diamond$ \sl 操作系统:} Windows, Linux.
+
+\section{项目经历} {\sl 基于Windows的时间管理系统} \hfill 2011/09 至 2012/05 \\
+                一个用来记录用户使用电脑用途时间百分比的软件，并能生成相关报告，及时反馈。
+                 \begin{itemize}  \itemsep -2pt % reduce space between items
+                 \item 使用Windows API收集数据，使用MySQL存储数据.
+                 \item 使用C++编写.
+                 \end{itemize}
+
+                {\sl C-Minus 编译器} \hfill        2012/06 \\
+                编译系统设计课程程序。
+                  \begin{itemize}
+                   \item 生成用于Nasm的32位x86汇编.
+                   \item 与另外两人合作，负责代码生成部分.
+                   \end{itemize}
+                {\sl TAS} \hfill        2012/09 至 2012/12\\
+                云端视频转码平台。
+                  \begin{itemize}
+                   \item $\textrm{Intel}^{\textregistered}$ SWPC China 2012第二名项目.
+                   \item 部署在亚马逊S3上.
+                   \end{itemize}
+                   
+                {\sl Project Panthera ASE} \hfill            2013/07 至 2014/02 \\
+                基于Hive的PL/SQL接口实现与性能优化。
+                 \begin{itemize}  \itemsep -2pt %reduce space between items
+                 \item 和其他两人合作完成,源码可
+                     在\href{https://github.com/intel-hadoop/project-panthera}{Github}上找到.
+                 \item $\textrm{Intel}^{\textregistered}$ Distribution for Hadoop(\sl IDH)的组成部分之一.
+                 \end{itemize}
+
+\section{外语考试}
+\begin{tabular}{p{0.4\textwidth}p{0.2\textwidth}p{0.3\textwidth}}
+%\hline
+{\sl CET-4} &{$572$} &{\hfill 2009/12}\\
+{\sl CET-6} &{$580$} &{\hfill 2012/06}\\
+{\sl TOEFL-iBT} &{$95$} &{\hfill 2012/05}
+%\hline
+\end{tabular}
+\section{获奖}
+            第11届浙江大学大学生程序设计竞赛三等奖（总第19名）.\\
+            第12届浙江大学大学生程序设计竞赛三等奖（总第10名）.
+
+\section{科研与工作\\经历}
+            \begin{itemize}
+            \item 本科期间在\href{http://give.zju.edu.cn}{数字媒体处理与企业智能计算实验室}从事
+                关于三维呈现与交互方面的工作。
+            \item 2012年9月至2013年2月在Intel亚太研发中心实习。
+            \item 2013年7月起在Intel亚太研发有限公司软件与服务事业部云基础架构组工作，关注Hadoop/Spark以及相关项目。
+            \end{itemize}
+
+\section{其它}
+	Github: \href{https://github.com/adrian-wang}{https://github.com/adrian-wang}
+\end{resume}
+\end{document}
+
+
+
+
+
+
+
