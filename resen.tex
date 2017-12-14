@@ -1,6 +1,7 @@
 % LaTeX resume using res.cls
 \documentclass[line,margin]{res}
 \usepackage{hyperref}
+\usepackage{outlines}
 \usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font
 
@@ -13,110 +14,63 @@
 
 
 \begin{resume}
-%\section{OBJECTIVE}       A position in the field of computers with special
-%                interests in applications programming, frame designing and
-%                information processing.
-
 
 \section{EDUCATION} {\sl Bachelor of Engineering,} Zhejiang University, Hangzhou, China \hfill Oct 2009 to Jun 2013\\
                 % \sl will be bold italic in New Century Schoolbook (or
 	        % any postscript font) and just slanted in
 		% Computer Modern (default) font
                 Enrolled in HE Zhijun Honored Class and graduated with a HE Zhijun Certification.\\
-                Won {\sl Student of Excellence} in 2011-2012.
+                Won {\sl Student of Excellence} in 2011-2012.\\
+                Involved in \href{http://give.zju.edu.cn/en/portal/index.html}{GIVE Lab} during undergradute.
                 Major: Computer Science \\
                 Overall GPA $3.83/4$
 
-\section{COMPUTER \\ SKILLS} {$\diamond$ \sl Languages \& Software:} JAVA, Scala, Python, C/C++, C\#, PHP, SQL, R, Ruby, BASIC, Assembly, JavaScript, Linux Shell, Windows Shell, Verilog HDL, Matlab, OpenCV, OpenGL, OpenMP, \LaTeX, MS Office. \\
-                {$\diamond$ \sl Operating Systems:} Windows, Linux.
-                
 \section{WORK EXPERIENCE}
-            \begin{itemize}
-            \item Involved in \href{http://give.zju.edu.cn/en/portal/index.html}{GIVE Lab} during undergradute.
-            \item Worked at Intel APAC R\&D (Shanghai) as a Software Engineer Intern from Sept 2012 to Feb 2013.
-            \item Work for Intel SSG PRC Cloud Computing Since Jul 2013, focusing on Hadoop/Spark and related projects.
-            \end{itemize}
+    {\sl Senior Software Engineer at Intel} \hfill         Jul 2013 to Now\\
+    After Daoyuan's graduation, he joined Big Data Technologies organization of Intel SSG. He works on optimization of Hadoop/Spark eco-system software, developing new features and improving performance for typical workloads.
+        \begin{outline}
+            \1{\sl Project Panthera ASE} \hfill        Jul 2013 to Feb 2014\\
+                An approach to support PL/SQL on Apache HIVE, to provide support for legacy queries with Intel Distribution for Hadoop(\sl IDH). The project was developed by three engineers including Daoyuan, source code is available at \href{https://github.com/intel-hadoop/project-panthera}{Github}. Daoyuan redesigned the basic processing structure of co-related subquery un-nesting, improving the passing rate of queries a lot. He committed a lot of code to this project involving bug fixing and new features such as error tracing. It was part of Intel Distribution for Hadoop(\sl IDH).
 
-\section{MAJOR\\ PROJECTS} 
-                %{\sl Windows based time management system} \hfill Sept 2011 To May 2012 \\
-                %A software that takes care of how much time the user spent working or playing when using computer and generates charts of records of selected scopes.
-                 %\begin{itemize}  \itemsep -2pt % reduce space between items
-                 %\item Using Windows API to collect information and using MySQL to store and index.
-                 %\end{itemize}
+             \1{\sl HiBench} \hfill        March 2014 to Dec 2014\\
+                Originated in Big Data Technologies, HiBench is a widely adopted big data benchmark suite in the industry. Before Daoyuan's contributions, HiBench could only work on MapReduce v1 of Apache Hadoop. Daoyuan fixed a lot of compatibility issues for different Hadoop versions, and finally made it support MapReduce v2 of Apache Hadoop (Hadoop Yarn), with the official release of HiBench 3.0. He then maintained this project till the end of 2014, answering question from community. This project is open-source, available at \href{https://github.com/intel-hadoop/HiBench}{Github}.
+                   
+            \1{\sl Apache Spark} \hfill        Apr 2014 to Now\\
+                Apache Spark is a fast and general engine for large-scale data processing. Apache Spark has become a widely used platform for computing in both clusters and clouds. Daoyuan contributed a lot of code to Apache Spark, mainly focused on Spark SQL.
+                   
+             \1{\sl Intel \href{https://github.com/Intel-bigdata/OAP}{OAP} (codename: Spinach)} \hfill        Feb 2017 to Now\\
+                OAP is the efforts from Intel BDT for ad-hoc queries support on Spark SQL. A lot of companies have adopted Apache Spark as their default analysis engine for large volume of data, and data scientist may require the analysis platform as a real-time query engine. While Spark is not designed for ad-hoc queries, OAP is the spark package to unlock the power of hardware, accelerating query execution using mechanism like indexing and caching.
+                Baidu, one of the largest internet companies in the world, has been using OAP in their real-time analysis engine in production for advertisement strategies. And they reported a 1.5x-5x performance gain using OAP.
+                This project is open-sourced from Jun 2017. Daoyuan is a core developer of this project.
+        \end{outline}
 
-                %{\sl QSMail} \hfill            Jun 2011 \\
-                %A inner-system e-mail platform.
-                % \begin{itemize}  \itemsep -2pt %reduce space between items
-                % \item Cooperated with three other students.
-                % \item Protocol designed by my own.
-                % \end{itemize}
-
-                %{\sl miniSQL} \hfill        Oct 2011 To Nov 2011 \\
-                %A mini implement of DBMS.
-                %  \begin{itemize}
-                %   \item Support the functions including select, update, delete, insert, create table, drop table, create index, drop index, execfile.
-                %   \item Cooperated with two other students.
-                %   \end{itemize}
-
-                 %{\sl Dormitory fees Management System} \hfill        Sept 2011 \\
-                %A system developed by PHP + MySQL to management the dormitory fees.
-
-                %{\sl C-Minus Compiler} \hfill        Jun 2012 \\
-                %Course project of Compiler Design.
-                %\begin{itemize}
-                   %\item Generate an X86 32-bit assembly file for Nasm.
-                   %\end{itemize}
-                
-                {\sl TAS(Transcode as A Service)} \hfill        Sept 2012 to Dec 2012\\
-                Transcode as a service on Hadoop.
+      {\sl Software Engineer Intern at Intel} \hfill         Sept 2012 to Dec 2012\\
+             Daoyuan joined Intel IT in 2012 as software engineer intern. He worked on the project of TAS(Transcode as a service) on Hadoop, providing transcoding service using Hadoop platform and Intel hardware transcoding technologies. He successfully traced down a BSOD bug, which was later identified as a bug in the driver program of Intel Graphics. He also developed a thorough test framework for the project, to enable automatic regression tests.
                   \begin{itemize}
                    \item Won 2nd place on $\textrm{Intel}^{\textregistered}$ SWPC China 2012.
-                   %\item Deployed on Amazon S3.
-                   \end{itemize}
-                   
-                {\sl Project Panthera ASE} \hfill        Jul 2013 to Feb 2014\\
-                A PL/SQL like implementation and performance optimization based on HIVE.
-                  \begin{itemize}
-                   \item Cooperated with two other engineers, source available at \href{https://github.com/intel-hadoop/project-panthera}{Github}.
-                   \item Part of $\textrm{Intel}^{\textregistered}$ Distribution for Hadoop(\sl IDH).
                    \end{itemize}
 
-                {\sl HiBench} \hfill        March 2014 to Dec 2014\\
-                HiBench is a big data benchmark suite.
-                  \begin{itemize}
-                   \item Open-source project, available at \href{https://github.com/intel-hadoop/HiBench}{Github}.
-                   \item Released HiBench 3.0, adding MRv2 support to HiBench.
-                   %\item Supported many customers all over the world.
-                   \end{itemize}
+\section{COMPUTER \\ SKILLS} {$\diamond$ \sl Languages \& Software:} JAVA, Scala, Python, C/C++, C\#, PHP, SQL, R, Ruby, BASIC, Assembly, JavaScript, Linux Shell, Windows Shell, Verilog HDL, Matlab, OpenCV, OpenGL, OpenMP, \LaTeX, MS Office. \\
 
-                {\sl Apache Spark} \hfill        Apr 2014 to Now\\
-                Apache Spark$^{\textrm{TM}}$ is a fast and general engine for large-scale data processing.
-                  \begin{itemize}
-                   \item Apache top-level project.
-                   \item Senior contributor in the community, mainly focused on SQL module.
-                   \end{itemize}
-                   
-                 {\sl Intel \href{https://github.com/Intel-bigdata/OAP}{OAP} (codename: Spinach)} \hfill        Feb 2017 to Now\\
-                OAP is our team's efforts for ad-hoc queries support on Spark SQL.
-                  \begin{itemize}
-                   \item Open-source from June 2017.
-                   \end{itemize}
+\section{STANDARD TESTS}
+\begin{tabular}{p{0.4\textwidth}p{0.2\textwidth}p{0.3\textwidth}}
+\hline
+{\sl TOEFL-iBT} &{$105$} &\hfill Nov 2017\\
+{\sl GRE} &{$152+170+3$} &\hfill Nov 2017\\
+\hline
+\end{tabular}
 
-%\section{FOREIGN LANGUAGE}
-%\begin{tabular}{p{0.4\textwidth}p{0.2\textwidth}p{0.3\textwidth}}
-%\hline
-%{\sl CET-4} &{$572$} &\hfill Dec 2009\\
-%{\sl CET-6} &{$580$} &\hfill Jun 2012\\
-%{\sl TOEFL-iBT} &{$105$} &\hfill Nov 2017
-%\hline
-%\end{tabular}
 \section{AWARDS}
-            Won 3rd prize(the 19th place) in the 11th Zhejiang University Programming Contests, and 3rd prize(the 10th place) in the 12th.
+    \begin{itemize}
+            \item Third prize(the 19th place) in the 11th Zhejiang University Programming Contests
+            \item Third prize(the 10th place) in the 12th Zhejiang University Programming Contests
+            \item Intel SSG 2017 Q3 Group Recognition Award
+    \end{itemize}
 
-\section{Translation}
+\section{TRANSLATION}
             {\sl Learning Spark: Lightning-fast Data Analysis} (Chinese version) \hfill O'Reilly
 
-\section{Talk}
+\section{PUBLIC TALKS}
             {\sl Tuning Garbage Collection for Spark Applications}\\
                 \rightline {QCon Shanghai 2015, Shanghai, Oct 2015}\\
             {\sl Spinach: Run Ad-hoc Queries on top of Spark SQL}\\
@@ -126,7 +80,7 @@
             {\sl OAP: Optimized Analytics Package for Spark Platform}\\
                 \rightline {Strata Beijing 2017, Beijing, Jul 2017}\\
 
-\section{Miscs}
+\section{MISCS}
             Github: \href{https://github.com/adrian-wang}{https://github.com/adrian-wang}
 \end{resume}
 \end{document} 
