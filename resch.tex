@@ -18,75 +18,33 @@
 \begin{resume}
 
 \section{教育经历} {\sl 何志均班} 计算机科学与技术, 浙江大学, 本科 \hfill 2009/08 至 2013/06\\
-                % \sl will be bold italic in New Century Schoolbook (or
-	        % any postscript font) and just slanted in
-		% Computer Modern (default) font
                 总GPA $86/100$\\
                 获浙江大学2011-2012学年三好学生\\
                 获学士学位，何志均荣誉证书\\
-              % Concentration: Computer Science \\
-              % Minor: Management
 
-\section{计算机技能} {$\diamond$ \sl 编程语言和办公软件:} JAVA, Scala, Python, C/C++, C\#, PHP, SQL, R, Ruby, BASIC, Assembly, JavaScript, Linux Shell, Windows Shell, Verilog HDL, Matlab, OpenCV, OpenGL, OpenMP, \LaTeX, MS Office. \\
-                {$\diamond$ \sl 操作系统:} Windows, Linux.
+\section{工作经历} 
+    {\sl 资深软件工程师@英特尔亚太研发有限公司} \hfill         2013年七月至今\\
+    毕业后加入英特尔软件与服务事业部（SSG）大数据部门，从事Hadoop/Spark大数据生态系统软件优化工作，结合实际用例为平台开发新功能并进行性能调优。\\
+        \begin{itemize}
+            \item{\sl Panthera ASE} \hfill        2013年7月至2014年2月\\
+                该项目尝试基于Apache Hive支持PL/SQL语法，并被集成到IDH（Intel的Hadoop发行版）中，支持客户一些固有查询无需修改即可迁移到Hive平台。项目主要共由三人进行开发，代码托管在\href{https://github.com/intel-hadoop/project-panthera}{Github}上。负责重新设计了关联子查询的处理逻辑，大大提高了对复杂查询语句的支持。另外，还修复了很多错误，开发了很多新功能，提高了查询支持度，还实现了一套针对错误查询语句报错的机制。\\
 
-\section{工作经历}
-            \begin{itemize}
-            \item 本科期间在\href{http://give.zju.edu.cn}{数字媒体处理与企业智能计算实验室}从事
-                关于三维呈现与交互方面的工作。
-            \item 2012年9月至2013年2月在Intel亚太研发有限公司实习。
-            \item 2013年7月起在Intel亚太研发有限公司软件与服务事业部云基础架构组工作，关注Hadoop/Spark以及相关项目。
-            \end{itemize}
-
-\section{主要项目经历} 
-                %{\sl 基于Windows的时间管理系统} \hfill 2011/09 至 2012/05 \\
-                %一个用来记录用户使用电脑用途时间百分比的软件，并能生成相关报告，及时反馈。
-                 %\begin{itemize}  \itemsep -2pt % reduce space between items
-                 %\item 使用Windows API收集数据，使用MySQL存储数据.
-                 %\item 使用C++编写.
-                 %\end{itemize}
-
-                %{\sl C-Minus 编译器} \hfill        2012/06 \\
-                %编译系统设计课程程序。
-                  %\begin{itemize}
-                   %\item 生成用于Nasm的32位x86汇编.
-                   %\item 与另外两人合作，负责代码生成部分.
-                   %\end{itemize}
-                {\sl TAS(Transcode as A Service)} \hfill        2012/09 至 2012/12\\
-                云端视频转码平台。
-                  \begin{itemize}
-                   \item $\textrm{Intel}^{\textregistered}$ SWPC China 2012第二名项目.
-                   %\item 部署在亚马逊S3上.
-                   \end{itemize}
+             \item{\sl HiBench} \hfill        2014年3月至2014年12月\\
+                HiBench是由英特尔大数据部门发起的开源大数据基准测试工具，在业界有比较广泛的应用。在本人参与项目前，HiBench仅支持Hadoop 0.x和1.x的提供的MRv1。本人修复了许多关于不同Hadoop版本的兼容性问题，并确保HiBench 3.0可以同时支持MRv1和MRv2，并负责发布了HiBench 3.0版本。该项目托管于\href{https://github.com/intel-hadoop/HiBench}{Github}。\\
                    
-                {\sl Project Panthera ASE} \hfill            2013/07 至 2014/02 \\
-                基于Hive的PL/SQL接口实现与性能优化。
-                 \begin{itemize}  \itemsep -2pt %reduce space between items
-                 \item 和其他两人合作完成,源码可
-                     在\href{https://github.com/intel-hadoop/project-panthera}{Github}上找到.
-                 \item $\textrm{Intel}^{\textregistered}$ Distribution for Hadoop(\sl IDH)的组成部分之一.
-                 \end{itemize}
-
-                {\sl HiBench} \hfill        2014/03 至 2014/12 \\
-                HiBench是一个大数据测试工具套件。
-                  \begin{itemize}
-                   \item 开源在\href{https://github.com/intel-hadoop/HiBench}{Github}.
-                   \item 主导发布了HiBench 3.0, 增加了MRv2支持。
-                   \end{itemize}
-
-                {\sl Apache Spark} \hfill        2014/04 至今\\
-                Apache Spark$^{\textrm{TM}}$是一个高效的大数据通用计算引擎。
-                  \begin{itemize}
-                   \item Apache顶级项目。
-                   \item 社区资深贡献者，主要关注Spark SQL模块。
-                   \end{itemize}
+            {\sl Apache Spark} \hfill        2014年4月至2016年9月 \\
+                Apache Spark是一个快速的分布式通用大规模数据计算平台。Apache Spark在集群和公有云/私有云中都有广泛的部署和应用。本人贡献了很多代码到Spark开源社区，主要集中在Spark SQL模块。结合用户的需求与反馈以及对程序的测试分析，所贡献的代码包括新功能实现、错误修复、性能优化等各方面，提高了Spark的易用性与功能，优化了性能。期间翻译出版了《Spark快速大数据分析一书》。\\
                    
-                {\sl Intel \href{https://github.com/Intel-bigdata/OAP}{OAP} (开发代号Spinach)}
-                  \hfill 2017/02 至今\\
-                OAP是Spark平台的优化分析包，可以加速Spark SQL的执行。
-                  \begin{itemize}
-                   \item 2017年6月起开源。
-                   \end{itemize}
+             {\sl Intel \href{https://github.com/Intel-bigdata/OAP}{OAP} (曾用名Spinach)} \hfill        2017年2月至今\\
+                OAP是英特尔大数据团队基于Spark SQL实现的即席查询加速库。许多公司在生产环境中尝试了部署Spark作为默认的大规模数据分析引擎，让数据科学家通过平台使用SQL进行一些数据分析，然而原生的Spark SQL性能可能无法满足即席查询的需求，毕竟Spark并不是为这种场景专门优化的。OAP是我们提供的Spark SQL优化包，充分利用集群的硬件条件，使用索引与缓存等机制加速查询的执行，同时对新硬件提供支持。\\
+                该项目于2017年6月开源，本人为项目核心开发者，主导了0.2与0.3版本的开发工作。百度在生产环境的广告策略实时分析引擎中使用了OAP包，并在真实的查询中观察到了1.5倍至5倍的性能提升。\\
+
+        \end{itemize}
+
+      {\sl 实习软件工程师@英特尔亚太研发有限公司} \hfill         2012年9月至2012年12月\\
+             以实习生身份工作于英特尔IT FLEX部门，参与基于Hadoop实现的TAS(Transcode as a service)项目。该项目使用Hadoop平台和英特尔集成显卡硬件解码功能提供视频转码服务。在测试中发现了系统隔一段时间会随机蓝屏的错误，后确定为显卡驱动的错误。负责使用C\#开发了项目的自动化测试框架，进行日常回归测试。
+
+\section{计算机技能} {$\diamond$ \sl 编程语言与软件:} Spark, Hive, Hadoop, Scala, JAVA, Python, SQL, C/C++, C\#, PHP, R, Ruby, BASIC, Assembly, JavaScript, Linux Shell, Windows Shell, Matlab, OpenCV, OpenGL, \LaTeX, MS Office. \\
 
 %\section{外语考试}
 %\begin{tabular}{p{0.4\textwidth}p{0.2\textwidth}p{0.3\textwidth}}
@@ -114,8 +72,11 @@
             {\sl OAP: Optimized Analytics Package for Spark Platform}\\
                 \rightline {Strata Beijing 2017，2017年7月，北京}\\
 
-\section{其它}
-	Github: \href{https://github.com/adrian-wang}{https://github.com/adrian-wang}
+\section{相关链接}
+            \begin{tabular}{p{0.3\textwidth}p{0.7\textwidth}}
+            {Github} &\href{https://github.com/adrian-wang}{https://github.com/adrian-wang}\\
+            {个人主页} &\href{http://daoyuan.wang}{http://daoyuan.wang}\\
+            \end{tabular}
 \end{resume}
 \end{document}
 
